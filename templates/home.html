@@ -31,9 +31,11 @@
 				<div id="bgImage">
 				<div id="screen">
 					<div id="content">
+            <!--
 						<div id="header">
 						<div class="top">INTRO</div>
 						</div>
+            -->
 
 						<div class="topic_header">NAME</div>
 						<div class="body_text">{{user['name']}}</div>
@@ -48,7 +50,6 @@
 
 						<div class="topic_header">MORE INFO</div>
 						<div class="body_text">
-						His/her online foot print:
             {% for social in user['social'] %}
 							<p><a href="{{social['link']}}" target="_blank">{{social['media']}}</a> - {{social['username']}} - {{social['description']}}</p>
             {% endfor %}
@@ -64,27 +65,46 @@
 
 						<div class="topic_header">PROJECTS</div>
 						<div class="body_text">
-						Some of the projects he/she has done:
-							<ul>
                 {% for project in user['projects'] %}
-                  <li><a href="{{project['link']}}" target="_blank">{{project['name']}}</a> - {{project['description']}}</li>
+                <p><a href="{{project['link']}}"
+                    target="_blank">{{project['name']}}</a> - {{project['description']}}<p>
                 {% endfor %}
-							</ul>
 						</div>
 
+						<div class="topic_header">CURRICULUM VIEAE</div>
+            <div class="body_text">
+              {% for resume in user['resume'] %}
+              <a href="../static/{{resume['link']}}" target="_blank">View/Download
+                {{resume['name']}}</a><br>
+              {% endfor %}
+						</div>
+
+            <div class="topic_header">
+              CERTIFICATIONS
+            </div>
+
+            <div class="body_text">
+              {% for cert in user['certs'] %}
+              <a href="{{cert['link']}}" target="_blank">{{cert['name']}}</a><br>
+              {% endfor %}
+            </div>
+
+            {% if user['additional'] %}
 
 						<div class="topic_header">SEE ALSO</div>
 						<div class="body_text">{{user['additional']}}</div>
 
-						<div class="topic_header">RESUME</div>
-						<div class="body_text"><a href="{{user['resume']}}" target="_blank">View/Download Resume.</a>
-						</div>
+            {% endif %}
+
 
 						<div class="topic_header">HISTORY</div>
-						<div class="body_text">{{user['history']}}</div>
+						<div class="body_text">
+                {% for history in user['history'] %}
+                <b>[{{history['year']}}]</b> {{history['description']}}<br><br>
+                {% endfor %}
+            </div>
 
 						<div id="footer">
-						Latest Update - 25/05/2018 V-3.0
 						</div>
 					</div>
 				</div>

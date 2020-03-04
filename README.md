@@ -14,7 +14,7 @@ There are many people out there like me who likes to live in there terminal.
 - Responsive-Design.
 
 ### Demo
- [Click Here](https://blesson.herokuapp.com/)
+ [Click Here](https://reaves.dev/)
 
 ### Scrots
 
