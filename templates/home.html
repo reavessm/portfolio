@@ -16,7 +16,7 @@
 		<meta name="description" content="{{user['description']}}">
 		<meta name="keywords" content="name">
 		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheet.css')}}">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="/static/favicon.ico" type="image/png"/>
 	</head>
 	<body>
 		<div id="head">{{user['name']}}<span class="cursor"></span></div>
@@ -58,7 +58,11 @@
 						<div class="topic_header">CONTACT METHODS</div>
 						<div class="body_text">
               {% for contact in user['contact'] %}
+              {% if contact['method'] == 'Email' %}
+              <a href="mailto:{{contact['address']}}">{{contact['method']}}</a> - {{contact['address']}}
+              {% else %}
 							  {{contact['method']}} - {{contact['address']}}
+              {% endif %}
               {% endfor %}
 						</div>
 
@@ -71,7 +75,7 @@
                 {% endfor %}
 						</div>
 
-						<div class="topic_header">CURRICULUM VIEAE</div>
+						<div class="topic_header">CURRICULUM VITAE</div>
             <div class="body_text">
               {% for resume in user['resume'] %}
               <a href="../static/{{resume['link']}}" target="_blank">View/Download

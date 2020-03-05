@@ -11,24 +11,29 @@ nickname : reavessm, rapscallionreaves, rpscln
 title: Stephen Reaves Resume
 
 description: >
-  Technical Consultant, Homelabber, and general nerd.
+  Technical Consultant, homelabber, and general nerd
 
 # You can customize this however you like
 social:
   - media : Github
     username : reavessm
     link : https://github.com/reavessm
-    description : Where I contribute and do projects
+    description : Source code repository for various open source project contributions
 
   - media : Gitlab
     username : reavessm
     link : https://gitlab.reaves.dev/reavessm
-    description : Where I contribute and do more private projects
+    description : Self-hosted source code repository for open source projects, eventually mirrors Github
 
   - media : LinkedIn
     username : Stephen Reaves
     link : https://linkedin.com/in/stephen-reaves-40813aa2
     description : Where I can be found for recruiters
+
+  - media : Level1Techs
+    username : reavessm
+    link : https://forum.level1techs.com/u/reavessm/summary
+    description : General tech forum where I give and receive advice
 
 contact:
   - method : Email

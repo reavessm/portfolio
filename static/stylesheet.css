@@ -138,6 +138,7 @@ body {
 	background: black;
 	/* background-image: url("http://blesson.herokuapp.com/image/bg3.png"); */
 	/* background-image: url("../image/bg3.png"); */
+  background-image: url("./favicon.ico");
 	opacity: 0.9;
 	width: 100%;
 	background-repeat: no-repeat;
