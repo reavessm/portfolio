@@ -15,11 +15,18 @@
 	 	<title>{{user['title']}}</title>
 		<meta name="description" content="{{user['description']}}">
 		<meta name="keywords" content="name">
-		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheet.css')}}">
-		<link rel="shortcut icon" href="/static/favicon.ico" type="image/png"/>
+    <link rel="stylesheet" 
+          type="text/css"
+          href="https://fontlibrary.org/face/source-code-pro"/>
+		<link rel="stylesheet" 
+          type="text/css" 
+          href="{{url_for('static', filename='stylesheet.css')}}"/>
+		<link rel="shortcut icon" 
+          type="image/png" 
+          href="/static/favicon.ico" />
 	</head>
 	<body>
-		<div id="head">{{user['name']}}<span class="cursor"></span></div>
+    <div id="head">{{user['name']}}<span class="cursor"></span></div>
 				<div id="bar">
 				    <div id="red">
 				    </div>
