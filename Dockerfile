@@ -6,6 +6,6 @@ FROM python:alpine
 COPY . /app
 
 RUN chmod +x /app/commands.sh \
-  && /usr/local/bin/pip install -r requirements.txt 
+  && /usr/local/bin/pip install -r /app/requirements.txt 
 
 ENTRYPOINT ["/bin/sh", "/app/commands.sh"]
