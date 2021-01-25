@@ -64,6 +64,9 @@ resume:
     link: Birkman.pdf
 
 certs:
+  - name: "Exam MB-300: Microsoft Dynamics 365 - Core Finance and Operations"
+    link: "https://www.youracclaim.com/badges/c208ad1f-6e45-4d66-b046-9cfd657da014/public_url"
+
   - name: "Exam 535: Architecting Microsoft Azure Solutions"
     link: "https://www.youracclaim.com/badges/5c85190e-61bb-4c08-ad0e-028b02bfa96d/public_url"
 
