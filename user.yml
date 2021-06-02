@@ -77,6 +77,9 @@ certs:
     link: "https://www.youracclaim.com/badges/4c0cf79d-d8e7-4e39-be19-fa55b0b87858/public_url"
 
 history: 
+  - description: Started working at Red Hat as a Software Engineer
+    year: 2021
+
   - description: Started working at Blue Horseshoe Solutions, Inc. as a Technical Consultant
     year: 2018
 
